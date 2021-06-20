@@ -23,24 +23,42 @@ namespace ArraysAndLists
              * Then add those numbers to either the evens List
              * or the odds List
              */
-            for (int Numbers = 0; Numbers < 11; Numbers++)
+            for (int i = 0; i < numbers.Length; i++)
             {
-                if (Numbers%2==0)
+                if (numbers[i] % 2 == 0) //my count starts with 0 and says its odd, then says 1 is even?
                 {
-                    Console.WriteLine(Numbers);
-                    Console.WriteLine("even numbers");
-                    
+
+                    evens.Add(numbers[i]);
+                    Console.WriteLine($"{i} is even"); //how to I get this to say "even" it says odd
+                }
+                else
+                {
+                    odds.Add(numbers[i]);
+                    Console.WriteLine($"{i} is odd"); //how do I get this to say "odd" it says even
 
                 }
-                else if (Numbers%1==0)
-                {
-                    Console.WriteLine(Numbers);
-                    Console.WriteLine("odd numbers");
-                }
-
-                evens[]
 
             }
+            //foreach (var num in numbers)
+            //{
+            //    if (num % 2 == 0)
+            //    {
+            //        evens.Add(num);
+            //    }
+            //    else
+            //    {
+            //        odds.Add(num);
+            //    }
+
+            //}
+            //foreach (var item in evens)
+            //{
+            //    Console.WriteLine($"{item} is even");
+            //}
+            //foreach (var item in odds)
+            //{
+            //    Console.WriteLine($"{item} is odd");
+            //}
             /* Now using foeach or for loops,
              * display each List of even and odd numbers
              *
