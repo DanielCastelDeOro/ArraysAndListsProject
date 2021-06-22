@@ -29,12 +29,12 @@ namespace ArraysAndLists
                 {
 
                     evens.Add(numbers[i]);
-                    Console.WriteLine($"{i} is even"); //how to I get this to say "even" it says odd
+                    Console.WriteLine($"{numbers[i]} is even"); 
                 }
                 else
                 {
                     odds.Add(numbers[i]);
-                    Console.WriteLine($"{i} is odd"); //how do I get this to say "odd" it says even
+                    Console.WriteLine($"{numbers[i]} is odd"); 
 
                 }
 
